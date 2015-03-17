@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/alexeagle/gulp-ts2dart.git"
+    "url": "https://github.com/angular/gulp-ts2dart.git"
   },
   "keywords": [
     "typescript",
@@ -18,9 +18,9 @@
   "author": "Alex Eagle <alexeagle@google.com> (https://angularjs.org/)",
   "license": "Apache 2.0",
   "bugs": {
-    "url": "https://github.com/alexeagle/gulp-ts2dart/issues"
+    "url": "https://github.com/angular/gulp-ts2dart/issues"
   },
-  "homepage": "https://github.com/alexeagle/gulp-ts2dart",
+  "homepage": "https://github.com/angular/gulp-ts2dart",
   "dependencies": {
     "through2": "^0.6.3"
   },
