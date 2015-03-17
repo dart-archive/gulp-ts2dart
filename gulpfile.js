@@ -6,7 +6,7 @@ gulp.task('test.check-format', function() {
   return gulp.src(['*.js', '*.ts']).pipe(formatter.checkFormat());
 });
 
-gulp.task('test', function() {
+gulp.task('test', ['test.check-format'], function() {
   gulp.src('test.ts')
       .pipe(ts2dart.transpile())
       .pipe(ts2dart.format())
