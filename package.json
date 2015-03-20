@@ -1,6 +1,6 @@
 {
   "name": "gulp-ts2dart",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gulp task to transpile TypeScript code to Dart.",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,10 @@
     "dart",
     "transpile"
   ],
-  "author": "Alex Eagle <alexeagle@google.com> (https://angularjs.org/)",
+  "contributors": [
+    "Alex Eagle <alexeagle@google.com> (https://angularjs.org/)",
+    "Martin Probst <martinprobst@google.com> (https://angularjs.org/)"
+  ],
   "license": "Apache 2.0",
   "bugs": {
     "url": "https://github.com/angular/gulp-ts2dart/issues"
@@ -28,7 +31,9 @@
     "which": "^1.0.9"
   },
   "devDependencies": {
+    "chalk": "^1.0.0",
     "gulp": "^3.8.11",
-    "gulp-clang-format": "^1.0.0"
+    "gulp-clang-format": "^1.0.0",
+    "gulp-util": "^3.0.4"
   }
 }
