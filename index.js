@@ -12,7 +12,7 @@ exports.transpile = function() {
         try {
           var src = ts2dart.translateFile(file.path);
           file.contents = new Buffer(src);
-          file.path = file.path.replace(/.ts$/, '.dart');
+          file.path = file.path.replace(/.[tj]s$/, '.dart');
           done(null, file);
         } catch (e) {
           hadErrors = true;
