@@ -25,15 +25,15 @@
   },
   "homepage": "https://github.com/angular/gulp-ts2dart",
   "dependencies": {
+    "chalk": "^1.0.0",
     "gulp-spawn": "^0.3.0",
+    "gulp-util": "^3.0.4"
     "through2": "^0.6.3",
     "ts2dart": "^0.1.0",
     "which": "^1.0.9"
   },
   "devDependencies": {
-    "chalk": "^1.0.0",
     "gulp": "^3.8.11",
     "gulp-clang-format": "^1.0.0",
-    "gulp-util": "^3.0.4"
   }
 }
