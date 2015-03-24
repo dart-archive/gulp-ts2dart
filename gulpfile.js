@@ -7,7 +7,7 @@ gulp.task('test.check-format', function() {
 });
 
 gulp.task('test', ['test.check-format'], function() {
-  gulp.src('test.ts')
+  gulp.src('test/test.ts', {/* preserve directory structure */ base: '.'})
       .pipe(ts2dart.transpile())
       .pipe(ts2dart.format())
       .pipe(gulp.dest('result'));
