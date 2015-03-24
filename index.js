@@ -26,13 +26,14 @@ exports.transpile = function() {
           done(null, null);
         }
       },
-      function finished() {
+      function finished(done) {
         if (hadErrors) {
           gutil.log(chalk.red('ts2dart transpilation failed.'));
           throw new Error('ts2dart transpilation failed.');
         } else {
           gutil.log(chalk.green('ts2dart transpilation succeeded.'));
         }
+        done();
       });
 };
 
