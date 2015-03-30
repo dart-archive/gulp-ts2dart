@@ -10,7 +10,8 @@ exports.transpile = function() {
   return through.obj(
       function(file, enc, done) {
         try {
-          var src = ts2dart.translateFile(file.path);
+          var transpiler = new ts2dart.Transpiler(/* failFast */ false, /* generateLibrary */ true);
+          var src = transpiler.translateFile(file.path, file.relative);
           file.contents = new Buffer(src);
           file.path = file.path.replace(/.[tj]s$/, '.dart');
           done(null, file);
