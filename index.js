@@ -12,6 +12,10 @@ exports.transpile = function() {
         try {
           var transpiler = new ts2dart.Transpiler(/* failFast */ false, /* generateLibrary */ true);
           var src = transpiler.translateFile(file.path, file.relative);
+          if (!src) {
+            hadErrors = true;
+            gutil.log(chalk.red('ts2dart: empty result from'), file.relative);
+          }
           file.contents = new Buffer(src);
           file.path = file.path.replace(/.[tj]s$/, '.dart');
           done(null, file);
