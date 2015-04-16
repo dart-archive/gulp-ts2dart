@@ -29,7 +29,7 @@
     "gulp-spawn": "^0.3.0",
     "gulp-util": "^3.0.4",
     "through2": "^0.6.3",
-    "ts2dart": "^0.2.0",
+    "ts2dart": "^0.3.0",
     "which": "^1.0.9"
   },
   "devDependencies": {
